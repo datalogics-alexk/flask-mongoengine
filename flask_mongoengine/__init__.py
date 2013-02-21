@@ -6,7 +6,10 @@ import math
 import mongoengine
 
 from mongoengine.queryset import MultipleObjectsReturned, DoesNotExist, QuerySet
-from mongoengine.base import ValidationError
+try:
+    from mongoengine.base import ValidationError
+except ImportError:
+    from mongoengine.errors import ValidationError
 
 from flask import abort
 
