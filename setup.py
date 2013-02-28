@@ -35,7 +35,7 @@ setup(
     install_requires=[
         'Flask>=0.8',
         'mongoengine',
-        'flask-wtf',
+        'Flask-WTF',
         'six'
     ],
     packages=['flask_mongoengine',
